@@ -13,9 +13,7 @@ function App() {
       <div>
         <body>
         <Header/>
-        <main>
-       <Presentacion/>
-       </main>
+   
        </body>
        
       </div>
