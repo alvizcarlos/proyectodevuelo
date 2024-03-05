@@ -12,8 +12,12 @@ function App() {
     <>
       <div>
         <body>
-       <Header/>
+        <Header/>
+        <main>
+       <Presentacion/>
+       </main>
        </body>
+       
       </div>
     </>
   )
