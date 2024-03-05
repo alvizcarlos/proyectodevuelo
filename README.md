@@ -1,8 +1,13 @@
-# React + Vite
+TravelHub TravelHub es tu compañero de viaje en línea, diseñado para simplificar la planificación y experiencia de tus aventuras. Explora, reserva vuelos, y comparte tus historias de viaje con facilidad.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Características Destacadas Búsqueda de Vuelos: Encuentra y reserva vuelos de manera intuitiva, personalizando tu búsqueda según origen, destino y fecha.
 
-Currently, two official plugins are available:
+Información de Destinos: Descubre detalles fascinantes sobre distintos destinos, desde atracciones imperdibles hasta opciones de alojamiento.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Reservas Simples: Reserva tu vuelo de forma fácil y rápida, con opciones de alojamiento adaptadas a tus necesidades.
+
+Recordatorios de Viaje: Recibe recordatorios útiles, desde el check-in hasta consejos prácticos para empacar, garantizando un viaje sin preocupaciones.
+
+Comentarios de Usuarios: Comparte tus experiencias y lee los comentarios de otros viajeros para obtener insights valiosos.
+
+Tecnologías Utilizadas HTML5 CSS3 JavaScript
