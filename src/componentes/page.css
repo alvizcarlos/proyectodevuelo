@@ -1,4 +1,11 @@
-
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    height : 100vh;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 /* Estilos generales */
 header {
     background: linear-gradient(to right, #3498db, #2ecc71);
