@@ -1,0 +1,448 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos generales */
+header {
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    padding: 15px 0;
+    border-radius: 0 0 20px 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centra los elementos en el eje principal */
+}
+
+nav li {
+    margin: 0 10px; /* Agregado margen horizontal para separar los elementos */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #3498db;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+    nav li {
+        margin: 10px 0; /* Aumenta el margen vertical para separar los elementos */
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background: linear-gradient(to right, #3498db, #2ecc71); 
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+
+}
+
+/* Estilos para la sección de Recordatorios de Viaje */
+.seccion {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.seccion h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.resultados {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resultados li {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Estilos específicos para la sección de Búsqueda de Vuelos */
+#busqueda {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#busqueda h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#busqueda label,
+#busqueda select,
+#busqueda input,
+#busqueda button {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#busqueda select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+#busqueda select:focus {
+    outline: none;
+    border-color: #2ecc71;
+}
+
+#busqueda button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#busqueda button:hover {
+    background-color: #45a049;
+}
+
+#busqueda input[type="date"] {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+#busqueda input[type="date"]:focus {
+    outline: none;
+    border-color: #2ecc71;
+}
+
+#busqueda {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#busqueda h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección de Información de Destinos */
+.destino-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.destino-card:hover {
+    transform: scale(1.05);
+}
+
+.destino-card h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.destino-card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.destino-card strong {
+    color: #333;
+}
+
+#destinos {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#destinos h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+
+/* Estilos para la sección de Reservas */
+#reservas {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#reservas h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección de Reservas */
+#reservas select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+#reservas select:focus {
+    outline: none;
+    border-color: #2980b9;
+}
+
+#reservas button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+#reservas button:hover {
+    background-color: #27ae60;
+}
+
+#reservas p {
+    font-size: 20px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 15px; /* Espacio superior */
+}
+
+#infoReserva {
+    font-size: 24px; /* Tamaño de fuente aún más grande para resaltar el precio */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 15px; /* Espacio superior */
+    color: #fefefe; /* Color verde para destacar */
+}
+
+
+/* Estilos para la sección de Comentarios de Usuarios */
+#comentarios label,
+#comentarios input,
+#comentarios textarea,
+#comentarios button {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#comentarios input,
+#comentarios textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+#comentarios input:focus,
+#comentarios textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+#comentarios button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#comentarios button:hover {
+    background-color: #45a049;
+}
+
+#listaComentarios li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#listaComentarios p {
+    color: #555;
+}
+
+
+
+#recordatorios {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#recordatorios h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#listaRecordatorios {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaRecordatorios li {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#listaRecordatorios li:before {
+    content: '\2022'; 
+    color: #3498db;
+    margin-right: 10px;
+}
+
+#listaRecordatorios li:last-child {
+    margin-bottom: 0;
+}
+
+
+#comentarios {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#comentarios h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#nombre, #comentario {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#nombre:focus, #comentario:focus {
+    outline: none;
+    border-color: #2ecc71;
+}
+
+#enviarComentario {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#enviarComentario:hover {
+    background-color: #2ecc71;
+}
+
+#listaComentarios {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaComentarios li {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#listaComentarios li p:first-child {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#listaComentarios li p:last-child {
+    font-style: italic;
+    color: #555;
+}
