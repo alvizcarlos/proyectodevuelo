@@ -48,13 +48,13 @@ nav a:hover {
 }
 
 /* Estilos para pantallas más pequeñas */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 60px) {
     nav li {
         margin: 10px 0; /* Aumenta el margen vertical para separar los elementos */
     }
 
     nav a {
-        font-size: 16px;
+        font-size: 10px;
         padding: 8px 15px;
     }
 }
