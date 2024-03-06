@@ -1,7 +1,5 @@
-import React from 'react'
 import './page.css'
 import React, { useEffect, useState } from 'react';
-import { Component } from 'react';
 
 let vuelosSimulados=[];
 
@@ -221,12 +219,12 @@ function Cargardestino() {
     cargarComentariosSimulados();
 });
 
-function EnviarComentario() {
+function EnviarComentario2() {
   const [nombreUsuario, setNombreUsuario] = useState('');
   const [comentario, setComentario] = useState('');
   const [comentarios, setComentarios] = useState([]);
 
-  function enviarComentario() {
+  function enviarComentario2() {
     // Obtén la fecha y hora actual del cliente
     const fechaHoraCliente = new Date().toLocaleString();
 
@@ -257,7 +255,7 @@ function EnviarComentario() {
         onChange={(e) => setComentario(e.target.value)}
         placeholder="Comentario"
       />
-      <button onClick={enviarComentario}>Enviar</button>
+      <button onClick={enviarComentario2}>Enviar</button>
       <ul id="listaComentarios">
         {comentarios.map((comentario, index) => (
           <li key={index}>
@@ -280,4 +278,4 @@ function EnviarComentario() {
 
 /* comentario correctivo para mejoras a futuro */
   
-  export default {Cargardestino, CargarVuelosSimulados, Buscarvuelos, ReservarVuelo, EnviarComentario, CargarRecordatorios, CargarComentariosSimulados}
+  export default {Cargardestino, CargarVuelosSimulados, Buscarvuelos, ReservarVuelo, EnviarComentario, CargarRecordatorios, CargarComentariosSimulados, EnviarComentario2}

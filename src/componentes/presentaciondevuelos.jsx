@@ -1,6 +1,7 @@
 import React from 'react'
 import './page.css'
-import './componentes'
+
+
 function Vuelo(){
 
 return (
@@ -42,7 +43,7 @@ return (
             <input type="date" id="fecha"/>
             
 
-            <button onclick={Buscarvuelos()}>Buscar Vuelos</button>
+            <button onclick={"hola"}>Buscar Vuelos</button>
             <div id="resultadosVuelos" class="resultados"></div>
         </section>
         <section id="destinos" class="seccion">
