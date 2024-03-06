@@ -1,5 +1,6 @@
 import React from 'react'
 import './page.css'
+import React, { useEffect, useState } from 'react';
 
 let vuelosSimulados=[];
 
@@ -13,7 +14,14 @@ function Cargardestino() {
     const destinosData = [
         { nombre: "Bogotá", atracciones: ["Monserrate", "Museo del Oro"], alojamiento: ["Hotel Estrella", "Hotel Montaña"] },
         { nombre: "Medellín", atracciones: ["Parque Botero", "Comuna 13"], alojamiento: ["Hotel X", "Hotel Y"] },
-        // Resto de los datos de destino
+        { nombre: "Cali", atracciones: ["Zoológico de Cali", "Monumento a Cristo Rey"], alojamiento: ["Hotel Brillante", "Hotel Dorado"] },
+        { nombre: "Cartagena", atracciones: ["Ciudad Amurallada", "Castillo de San Felipe"], alojamiento: ["Hotel Playa Dorada", "Hotel Colonial"] },
+        { nombre: "Barranquilla", atracciones: ["Carnaval de Barranquilla", "Museo del Caribe"], alojamiento: ["Hotel Brisas", "Hotel Mar"] },
+        { nombre: "Cúcuta", atracciones: ["Parque Santander", "Catedral de San José"], alojamiento: ["Hotel Aurora", "Hotel Sereno"] },
+        { nombre: "Bucaramanga", atracciones: ["Parque del Agua", "Casa de Bolívar"], alojamiento: ["Hotel Serenidad", "Hotel Bucaré"] },
+        { nombre: "Pereira", atracciones: ["Jardín Botánico Universidad Tecnológica", "Plaza de Bolívar"], alojamiento: ["Hotel Jardín", "Hotel Valle"] },
+        { nombre: "Santa Marta", atracciones: ["Parque Nacional Natural Tayrona", "Catedral de Santa Marta"], alojamiento: ["Hotel Maravilla", "Hotel Oasis"] },
+        { nombre: "Ibagué", atracciones: ["Jardín Botánico de Ibagué", "Catedral Primada"], alojamiento: ["Hotel Sol Radiante", "Hotel Imperial"] },
       ];
     
       return (
@@ -28,5 +36,51 @@ function Cargardestino() {
         </div>
       );
   }
+
+  function CargarVuelosSimulados(){
+
+    const [vuelosSimulados, setVuelosSimulados] = useState([]);
+
+    useEffect(() => {
+      cargarVuelosSimulados();
+    }, []);
   
-  export default Cargardestino
+    function cargarVuelosSimulados() {
+      const vuelosSimulados = [
+        { origen: "Bogotá", destino: "Medellín", precio: 300 },
+        { origen: "Bogotá", destino: "Cali", precio: 250 },
+        { origen: "Medellín", destino: "Barranquilla", precio: 400 },
+        { origen: "Cali", destino: "Cartagena", precio: 350 },
+        { origen: "Barranquilla", destino: "Santa Marta", precio: 200 },
+        { origen: "Cúcuta", destino: "Bucaramanga", precio: 180 },
+        { origen: "Bucaramanga", destino: "Pereira", precio: 280 },
+        { origen: "Pereira", destino: "Ibagué", precio: 220 },
+        { origen: "Santa Marta", destino: "Cali", precio: 320 },
+        { origen: "Ibagué", destino: "Bogotá", precio: 270 },
+        // Puedes agregar más vuelos simulados según sea necesario
+      ];
+  
+      setVuelosSimulados(vuelosSimulados);
+    }
+  
+    return (
+      <div>
+        <select id="seleccionVuelo">
+          {vuelosSimulados.map((vuelo, index) => (
+            <option key={index} value={index}>
+              {`${vuelo.origen} a ${vuelo.destino} - Precio: $${vuelo.precio}`}
+            </option>
+          ))}
+        </select>
+      </div>
+    );
+    
+  }
+
+  function Buscarvuelos(){
+    
+  }
+
+
+  
+  export default {Cargardestino, CargarVuelosSimulados}
