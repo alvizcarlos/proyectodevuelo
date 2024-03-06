@@ -278,6 +278,6 @@ function EnviarComentario() {
 
 
 
-
+/* comentario correctivo para mejoras a futuro */
   
   export default {Cargardestino, CargarVuelosSimulados, Buscarvuelos, ReservarVuelo, EnviarComentario, CargarRecordatorios, CargarComentariosSimulados}
