@@ -1,6 +1,7 @@
 import React from 'react'
 import './page.css'
 
+let vuelosSimulados=[];
 
 function Header2() {
 
