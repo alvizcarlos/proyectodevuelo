@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import './componentes/page.css'
 import Header from './componentes/header'
 import Presentacion from './componentes/presentacion'
