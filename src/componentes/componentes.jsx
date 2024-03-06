@@ -1,6 +1,7 @@
 import React from 'react'
 import './page.css'
 import React, { useEffect, useState } from 'react';
+import { Component } from 'react';
 
 let vuelosSimulados=[];
 
