@@ -1,5 +1,6 @@
 import React from 'react'
 import './page.css'
+import Cargardestino from './componentes.jsx'
 
 
 function Vuelo(){
@@ -48,7 +49,9 @@ return (
         </section>
         <section id="destinos" class="seccion">
             <h1>Información de Destinos</h1>
-            <div id="destinos-info" class="resultados"></div>
+            <div>
+           <Cargardestino/>
+            </div>
         </section>
 
         <section id="reservas" class="seccion">
