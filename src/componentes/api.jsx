@@ -4,7 +4,7 @@ function Button() {
     const [datos, setDatos] = useState(null);
   
     const llamarAPI = () => {
-      fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+      fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
         .then(response => response.json())
         .then(data => {
           setDatos(data);
@@ -17,7 +17,7 @@ function Button() {
     return (
       <div>
         <button onClick={llamarAPI}>Llamar a la API</button>
-        {datos && <div>{JSON.stringify(datos)}</div>}
+        {datos && <div>{JSON.stringify(datos.name)}</div>}
         
       </div>
       
