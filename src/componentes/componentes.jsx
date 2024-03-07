@@ -98,9 +98,39 @@ function Cargardestino() {
       </div>
     );
   }
+  function Buscarvuelos(){
+    function buscarVuelos() {
+      const origen = document.getElementById("origen").value;
+      const destino = document.getElementById("destino").value;
+      const fecha = document.getElementById("fecha").value;
+  
+      const resultadosVuelos = document.getElementById("resultadosVuelos");
+      resultadosVuelos.innerHTML = (
+        <div>
+          <p>Resultados para vuelos de {origen} a {destino} en la fecha {fecha}</p>
+          <ul>
+            <li>Vuelo 1 - Precio: $300</li>
+            <li>Vuelo 2 - Precio: $250</li>
+            <li>Vuelo 3 - Precio: $400</li>
+          </ul>
+        </div>
+      );
+    }
+  
+    return (
+      <div>
+        <input id="origen" type="text" placeholder="Origen" />
+        <input id="destino" type="text" placeholder="Destino" />
+        <input id="fecha" type="date" />
+        <button onClick={buscarVuelos}>Buscar</button>
+        <div id="resultadosVuelos"></div>
+      </div>
+    );
+    
+  }
 
   
   
   export default Cargardestino
-  export {ReservarVuelo, CargarVuelosSimulados}
+  export {ReservarVuelo, CargarVuelosSimulados, Buscarvuelos}
   

@@ -1,6 +1,7 @@
 import React from 'react'
 import './page.css'
 
+
 function Recordatorio() {
 
     return (
@@ -18,13 +19,7 @@ function Recordatorio() {
             </ul>
         </section>
         
-        <section id="comentarios" class="seccion">
-            <h1>Comentarios de Usuarios</h1>
-            <label for="nombre">Nombre:</label>
-            <textarea id="comentario" placeholder="Deja tu comentario..."></textarea>
-            <button onclick="enviarComentario()">Enviar Comentario</button>
-            <ul id="listaComentarios" class="resultados"></ul>
-        </section>
+    
         
     
 
