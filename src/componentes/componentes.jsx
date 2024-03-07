@@ -30,6 +30,44 @@ function Cargardestino() {
       );
   }
 
+  function CargarVuelosSimulados() {
+    const [vuelosSimulados, setVuelosSimulados] = useState([]);
+  
+    useEffect(() => {
+      cargarVuelosSimulados();
+    }, []);
+  
+    function cargarVuelosSimulados() {
+      const vuelosSimulados = [
+        { origen: "Bogotá", destino: "Medellín", precio: 300 },
+        { origen: "Bogotá", destino: "Cali", precio: 250 },
+        { origen: "Medellín", destino: "Barranquilla", precio: 400 },
+        { origen: "Cali", destino: "Cartagena", precio: 350 },
+        { origen: "Barranquilla", destino: "Santa Marta", precio: 200 },
+        { origen: "Cúcuta", destino: "Bucaramanga", precio: 180 },
+        { origen: "Bucaramanga", destino: "Pereira", precio: 280 },
+        { origen: "Pereira", destino: "Ibagué", precio: 220 },
+        { origen: "Santa Marta", destino: "Cali", precio: 320 },
+        { origen: "Ibagué", destino: "Bogotá", precio: 270 },
+        // Puedes agregar más vuelos simulados según sea necesario
+      ];
+  
+      setVuelosSimulados(vuelosSimulados);
+    }
+  
+    return (
+      <div>
+        <select id="seleccionVuelo">
+          {vuelosSimulados.map((vuelo, index) => (
+            <option key={index} value={index}>
+              {`${vuelo.origen} a ${vuelo.destino} - Precio: $${vuelo.precio}`}
+            </option>
+          ))}
+        </select>
+      </div>
+    );
+  }
+
   function ReservarVuelo() {
     const [vuelosSimulados, setVuelosSimulados] = useState([]);
   
@@ -64,5 +102,5 @@ function Cargardestino() {
   
   
   export default Cargardestino
-  export {ReservarVuelo}
+  export {ReservarVuelo, CargarVuelosSimulados}
   
