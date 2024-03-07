@@ -49,9 +49,7 @@ return (
         </section>
         <section id="destinos" class="seccion">
             <h1>Información de Destinos</h1>
-            <div>
-           <Cargardestino/>
-            </div>
+          <div><Cargardestino/></div>
         </section>
 
         <section id="reservas" class="seccion">
