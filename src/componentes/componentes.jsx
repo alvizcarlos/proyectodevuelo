@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 
 
 
+
+
 function Cargardestino() {
     const destinosData = [
         { nombre: "Bogotá", atracciones: ["Monserrate", "Museo del Oro"], alojamiento: ["Hotel Estrella", "Hotel Montaña"] },

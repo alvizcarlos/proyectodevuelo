@@ -3,6 +3,8 @@ import './page.css'
 import Cargardestino from './componentes.jsx'
 
 
+
+
 function Vuelo(){
 
 
@@ -53,15 +55,7 @@ return (
           <div><Cargardestino/></div>
         </section>
 
-        <section id="reservas" class="seccion">
-            <h1>Reservas Simples</h1>
-            <p>Selecciona tu vuelo:</p>
-            <select id="seleccionVuelo"></select>
 
-            <button onclick="reservarVuelo()">Reservar Vuelo</button>
-            <div id="infoReserva" class="resultados"></div>
-        </section>
-    
     </div>
     
     </>

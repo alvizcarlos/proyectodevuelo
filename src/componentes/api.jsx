@@ -4,7 +4,7 @@ function Button() {
     const [datos, setDatos] = useState(null);
   
     const llamarAPI = () => {
-      fetch('https://api.aviationstack.com/v1/flights')
+      fetch('https://pokeapi.co/api/v2/pokemon/ditto')
         .then(response => response.json())
         .then(data => {
           setDatos(data);
