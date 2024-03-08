@@ -22,7 +22,7 @@ function Button() {
             <tr>
                 <th>Nombre</th>
                 <th>Numero de Naves</th>
-                <th>Misiones</th>
+                <th>Mision</th>
                 <th>Total De Aeronaves</th>
             </tr>
         </thead>
