@@ -32,78 +32,8 @@ function Cargardestino() {
       );
   }
 
-  function CargarVuelosSimulados() {
-    const [vuelosSimulados, setVuelosSimulados] = useState([]);
-  
-    useEffect(() => {
-      cargarVuelosSimulados();
-    }, []);
-  
-    function cargarVuelosSimulados() {
-      const vuelosSimulados = [
-        { origen: "Bogotá", destino: "Medellín", precio: 300 },
-        { origen: "Bogotá", destino: "Cali", precio: 250 },
-        { origen: "Medellín", destino: "Barranquilla", precio: 400 },
-        { origen: "Cali", destino: "Cartagena", precio: 350 },
-        { origen: "Barranquilla", destino: "Santa Marta", precio: 200 },
-        { origen: "Cúcuta", destino: "Bucaramanga", precio: 180 },
-        { origen: "Bucaramanga", destino: "Pereira", precio: 280 },
-        { origen: "Pereira", destino: "Ibagué", precio: 220 },
-        { origen: "Santa Marta", destino: "Cali", precio: 320 },
-        { origen: "Ibagué", destino: "Bogotá", precio: 270 },
-        // Puedes agregar más vuelos simulados según sea necesario
-      ];
-  
-      setVuelosSimulados(vuelosSimulados);
-    }
-  
-    return (
-      <div>
-        <select id="seleccionVuelo">
-          {vuelosSimulados.map((vuelo, index) => (
-            <option key={index} value={index}>
-              {`${vuelo.origen} a ${vuelo.destino} - Precio: $${vuelo.precio}`}
-            </option>
-          ))}
-        </select>
-      </div>
-    );
-  }
-
-
-  function Buscarvuelos(){
-    function buscarVuelos() {
-      const origen = document.getElementById("origen").value;
-      const destino = document.getElementById("destino").value;
-      const fecha = document.getElementById("fecha").value;
-  
-      const resultadosVuelos = document.getElementById("resultadosVuelos");
-      resultadosVuelos.innerHTML = (
-        <div>
-          <p>Resultados para vuelos de {origen} a {destino} en la fecha {fecha}</p>
-          <ul>
-            <li>Vuelo 1 - Precio: $300</li>
-            <li>Vuelo 2 - Precio: $250</li>
-            <li>Vuelo 3 - Precio: $400</li>
-          </ul>
-        </div>
-      );
-    }
-  
-    return (
-      <div>
-        <input id="origen" type="text" placeholder="Origen" />
-        <input id="destino" type="text" placeholder="Destino" />
-        <input id="fecha" type="date" />
-        <button onClick={buscarVuelos}>Buscar</button>
-        <div id="resultadosVuelos"></div>
-      </div>
-    );
-    
-  }
-
   
   
   export default Cargardestino
-  export {CargarVuelosSimulados, Buscarvuelos}
+
   
