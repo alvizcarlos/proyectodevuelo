@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './page.css'
 
 function Button() {
     const [datos, setDatos] = useState([]);
@@ -14,27 +15,29 @@ function Button() {
           console.error('Error al llamar a la API:', error);
         });
     };
-  
+
     const renderTabla = () => {
       return (
-        <table>
-          <thead>
+        <table className="Tabla">
+        <thead>
             <tr>
-              <th>Nombre</th>
-              <th>Numero de Naves</th>
-              <th>Misiones</th>
+                <th>Nombre</th>
+                <th>Numero de Naves</th>
+                <th>Misiones</th>
+                <th>Total De Aeronaves</th>
             </tr>
-          </thead>
-          <tbody>
-            {datos.map((item, index) => (
-              <tr key={index}>
-                <td>{item.Nombre}</td>
-                <td>{item.Versiones}</td>
-                <td>{item.Mision}</td>
-              </tr>
+        </thead>
+        <tbody>
+            {datos.filter(item => item.Versiones && item.Versiones.length > 0).map((item, index) => (
+                <tr key={index}>
+                    <td>{item.Nombre}</td>
+                    <td>{item.Versiones}</td>
+                    <td>{item.Mision}</td>
+                    <td>{item.Total}</td>
+                </tr>
             ))}
-          </tbody>
-        </table>
+        </tbody>
+    </table>
       );
     };
   

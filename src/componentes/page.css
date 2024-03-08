@@ -445,3 +445,17 @@ footer {
     font-style: italic;
     color: #555;
 }
+
+.Tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Tabla td, .Tabla th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+
+
