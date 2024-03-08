@@ -70,36 +70,7 @@ function Cargardestino() {
     );
   }
 
-  function ReservarVuelo() {
-    const [vuelosSimulados, setVuelosSimulados] = useState([]);
-  
-    function reservarVuelo() {
-      const vueloIndex = document.getElementById("seleccionVuelo").value;
-      const vueloSeleccionado = vuelosSimulados[vueloIndex];
-      const infoReserva = document.getElementById("infoReserva");
-  
-      infoReserva.innerHTML = (
-        <div>
-          <p>Vuelo de {vueloSeleccionado.origen} a {vueloSeleccionado.destino} reservado. ¡Gracias!</p>
-          <p>Precio: ${vueloSeleccionado.precio}</p>
-        </div>
-      );
-    }
-  
-    return (
-      <div>
-        <select id="seleccionVuelo">
-          {vuelosSimulados.map((vuelo, index) => (
-            <option key={index} value={index}>
-              {`${vuelo.origen} a ${vuelo.destino} - Precio: $${vuelo.precio}`}
-            </option>
-          ))}
-        </select>
-        <button onClick={reservarVuelo}>Reservar</button>
-        <div id="infoReserva"></div>
-      </div>
-    );
-  }
+
   function Buscarvuelos(){
     function buscarVuelos() {
       const origen = document.getElementById("origen").value;
@@ -134,5 +105,5 @@ function Cargardestino() {
   
   
   export default Cargardestino
-  export {ReservarVuelo, CargarVuelosSimulados, Buscarvuelos}
+  export {CargarVuelosSimulados, Buscarvuelos}
   

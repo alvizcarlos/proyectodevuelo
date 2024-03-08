@@ -15,19 +15,34 @@ function Button() {
         });
     };
   
+    const renderTabla = () => {
+      return (
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Numero de Naves</th>
+              <th>Misiones</th>
+            </tr>
+          </thead>
+          <tbody>
+            {datos.map((item, index) => (
+              <tr key={index}>
+                <td>{item.Nombre}</td>
+                <td>{item.Versiones}</td>
+                <td>{item.Mision}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      );
+    };
+  
     return (
       <div>
         <button onClick={llamarAPI}>Llamar a la API</button>
-        {datos.map(item=>{
-          return(
-            <div>
-              {item.Nombre}
-            </div>
-          )
-        }) }
-        
+        {datos.length > 0 && renderTabla()}
       </div>
-      
     );
   }
   
