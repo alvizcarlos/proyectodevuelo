@@ -455,6 +455,12 @@ footer {
     border: 1px solid #dddddd;
     padding: 8px;
     text-align: left;
+
+
+}
+
+.Tabla thead{
+    background-color:  #4e9c59;
 }
 
 
