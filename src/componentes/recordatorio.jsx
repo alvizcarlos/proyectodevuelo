@@ -8,9 +8,9 @@ function Recordatorio() {
       <>
         <div>
             <main>
-        <section id="recordatorios" class="seccion">
+        <section id="recordatorios" className="seccion">
             <h1>Recordatorios de Viaje</h1>
-            <ul id="listaRecordatorios" class="resultados">
+            <ul id="listaRecordatorios" className="resultados">
                 <li>Recuerda realizar el check-in para tu vuelo a Bogotá el 15 de marzo.</li>
                 <li>Asegúrate de llevar contigo los documentos de viaje, incluyendo tu pasaporte y tarjeta de embarque.</li>
                 <li>Verifica las restricciones de equipaje y las políticas de la aerolínea antes de tu vuelo.</li>

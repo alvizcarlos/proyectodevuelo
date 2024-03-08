@@ -11,9 +11,9 @@ function Vuelo(){
 return (
     <>
     <div>
-    <section id="busqueda" class="seccion">
+    <section id="busqueda" className="seccion">
             <h1>Búsqueda de Vuelos</h1>
-            <label for="origen">Origen:</label>
+            <label htmlFor="origen">Origen:</label>
             <select id="origen" required>
                 <option value="" disabled selected>Selecciona una ciudad</option>
                 <option value="Bogotá">Bogotá</option>
@@ -28,7 +28,7 @@ return (
                 <option value="Ibagué">Ibagué</option>
             </select>
 
-            <label for="destino">Destino:</label>
+            <label htmlFor="destino">Destino:</label>
             <select id="destino" required>
                 <option value="" disabled selected>Selecciona una ciudad</option>
                 <option value="Bogotá">Bogotá</option>
@@ -43,14 +43,14 @@ return (
                 <option value="Ibagué">Ibagué</option>
             </select>
 
-            <label for="fecha">Fecha:</label>
+            <label htmlFor="fecha">Fecha:</label>
             <input type="date" id="fecha"/>
             
 
-            <button onclick={"hola"}>Buscar Vuelos</button>
-            <div id="resultadosVuelos" class="resultados"></div>
+            <button onClick={Boolean}>Buscar Vuelos</button>
+            <div id="resultadosVuelos" className="resultados"></div>
         </section>
-        <section id="destinos" class="seccion">
+        <section id="destinos" className="seccion">
             <h1>Información de Destinos</h1>
           <div><Cargardestino/></div>
         </section>
