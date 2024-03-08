@@ -447,25 +447,31 @@ footer {
 }
 
 .Tabla {
-    width: 100%;
-    border-collapse: collapse;
+
+    background-color: #fff5;
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
 }
-
-.Tabla td, .Tabla th {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: left;
-
-
-}
-
-.Tabla thead{
-    background-color:  #4e9c59;
-}
-
-.Tabla table, th, td {
+.Tabla th, td {
+    color: black;
     border-collapse: collapse;
     padding: 1rem;
     text-align: left;
+}
+.Tabla th{
+    color: white;
+}
+
+.Tabla thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #27646efe;
+    cursor: pointer;
+    text-transform: capitalize;
 }
 
