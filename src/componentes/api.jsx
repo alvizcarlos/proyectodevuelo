@@ -21,7 +21,7 @@ function Button() {
         <thead>
             <tr>
                 <th>Nombre</th>
-                <th>Numero de Naves</th>
+                <th>Version</th>
                 <th>Mision</th>
                 <th>Total De Aeronaves</th>
             </tr>
