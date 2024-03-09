@@ -9,10 +9,11 @@ function Header() {
             <header>
         <nav>
             <ul>
-                <li><a href="#comentarios">Llamado de api</a></li>
-                <li><a href="#busqueda">Búsqueda de Vuelos</a></li>
+                <li><a href="#Api">Llamado de api</a></li>
                 <li><a href="#destinos">Información de Destinos</a></li>
+                <li><a href="#busqueda">Búsqueda de Vuelos</a></li>
                 <li><a href="#recordatorios">Recordatorios de Viaje</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
             </ul>
         </nav></header>
          

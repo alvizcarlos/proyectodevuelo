@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './page.css'
-import Cargardestino from './componentes.jsx'
 
 
 
@@ -29,7 +28,7 @@ function Vuelo() {
 
     return (
         <section id="busqueda" className="seccion">
-            <h1>Búsqueda de Vuelos</h1>
+            <div className='textoCentrado'><h1>Búsqueda de Vuelos</h1></div>
             <label htmlFor="origen">Origen:</label>
             <select id="origen" value={origen} onChange={handleOrigenChange} required>
                 <option value="" disabled>Selecciona una ciudad</option>

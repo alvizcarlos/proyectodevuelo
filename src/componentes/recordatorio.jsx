@@ -9,7 +9,7 @@ function Recordatorio() {
         <div>
             <main>
         <section id="recordatorios" className="seccion">
-            <h1>Recordatorios de Viaje</h1>
+            <div className='textoCentrado'><h1>Recordatorios de Viaje</h1></div>
             <ul id="listaRecordatorios" className="resultados">
                 <li>Recuerda realizar el check-in para tu vuelo a Bogotá el 15 de marzo.</li>
                 <li>Asegúrate de llevar contigo los documentos de viaje, incluyendo tu pasaporte y tarjeta de embarque.</li>
@@ -23,9 +23,7 @@ function Recordatorio() {
         
     
 
-    <footer>
-        <p>&copy; 2024 TravelHub - Derechos Reservados -  alvizcarlos</p>
-    </footer>
+
          </main>
         </div>
       </>

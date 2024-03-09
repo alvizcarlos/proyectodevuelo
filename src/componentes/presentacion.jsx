@@ -16,9 +16,9 @@ function Presentacion() {
         </section>
 
 
-        <section id="comentarios" className="seccion">
+        <section id="Api" className="seccion">
 
-            <h1>Llamado de Api</h1>
+            <div className='textoCentrado'><h1>Llamado De Api</h1></div>
             
             <div><Button/></div>
             

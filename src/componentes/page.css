@@ -475,3 +475,60 @@ footer {
     text-transform: capitalize;
 }
 
+/* Estilos para la sección de Comentarios de Usuarios */
+#Api label,
+#Api input,
+#Api textarea,
+#Api button {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#Api input,
+#Api textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+#Api input:focus,
+#Api textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+#Api button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#Api button:hover {
+    background-color: #45a049;
+}
+
+#Api{
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#Api h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.textoCentrado {
+    text-align: center;
+}
+
+
